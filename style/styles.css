@@ -1,0 +1,93 @@
+body {
+  background-color: orangered;
+  margin: 0;
+  font-family: rubik;
+  color: white;
+  width: 100vw;
+}
+.container {
+  padding: 40px;
+  margin: 0 auto;
+  width: 100vw;
+}
+
+
+.logo{
+  text-align: center;
+  width: 100vw;
+}
+
+#container-pokedex{
+  display: flex;
+  flex-wrap: wrap;
+  padding: 20px;
+  padding-left: 100px;
+  width: 100vw;
+  
+}
+
+.container-pokedex-card{
+  background-color: white;
+  padding: 70px;
+  color: black;
+  margin:20px;
+  border-radius: 20px;
+  text-align: center;
+  background-image:url(/img/fondo-card.png);
+  background-size: cover;
+  text-transform: uppercase;
+}
+
+.buscador{
+  text-align: center;
+  width: 100vw;
+}
+
+.container-pokedex-card:hover{
+  -webkit-animation: tiembla 0.9s;
+}
+  @-webkit-keyframes tiembla{
+  0%  { -webkit-transform:rotateZ(-5deg); }
+  50% { -webkit-transform:rotateZ( 0deg) scale(.8); }
+  100%{ -webkit-transform:rotateZ( 5deg); }
+}
+
+.inputSearch{
+  padding: 10px;
+  width: 200px;
+  height: 30px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-image:url(/img/fondo_buscar.png);
+  background-size: cover;
+  text-transform: uppercase;
+
+}
+
+.container-pokedex-card img{
+  width: 100px;
+}
+
+
+.imagen{
+  height: 100px;
+  padding: 20px;
+  color: black;
+  display: flex;
+}
+
+
+@keyframes bounce {
+  20% {
+    transform: translateY(-6px);
+  }
+  40% {
+    transform: translateY(0px);
+  }
+  60% {
+    transform: translateY(-2px);
+  }
+  80% {
+    transform: translateY(-0px);
+  }
+}
